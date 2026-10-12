@@ -3,7 +3,7 @@
 ##  
 
 # def decorate(func):
-#     def wrapper(*args):
+#     def wrapper(a,b):
 #         print("Addition of given numbers !!")
 #         func(a,b)
 #         print("thankyou")
@@ -16,3 +16,20 @@
 #     print(f"total is {a+b}")
 
 # addition(12,12)
+
+
+
+def decorate(func):
+    def wrapper(*args,**kwargs):
+        print("Addition of given numbers !!")
+        func(*args,**kwargs)
+        print("thankyou")
+    return wrapper
+    
+
+
+@decorate
+def addition(*args):
+    print(f"total is {sum(args)}")
+
+addition(12,12,24,52)

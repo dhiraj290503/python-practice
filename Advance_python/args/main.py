@@ -35,4 +35,4 @@ def info(**krs):
         print(f"{i} : {krs[i]}")
 
 
-info(name="sonya",age=24,add="puinee")
+info(name="sonya",age=24,add="pune")
