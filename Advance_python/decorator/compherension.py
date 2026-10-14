@@ -16,7 +16,12 @@
 # dict2={i:i**3 for i in range(1,10) if i%2!=0}
 # print(dict2)
 
+
+# dict2={i*2:i**3 for i in range(1,10) }
+# print(dict2)
+
 """SET"""
 
-s1={x*2 for x in range(1,11)}
-print(s1)
+# s1={x*2 for x in range(1,11)}
+# print(s1)
+

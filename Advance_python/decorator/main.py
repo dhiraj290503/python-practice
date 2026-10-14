@@ -29,7 +29,8 @@ def decorate(func):
 
 
 @decorate
-def addition(*args):
-    print(f"total is {sum(args)}")
+def addition(*args,**kwargs):
+    total = sum(args) + sum(kwargs.values())
+    print(f"total is {total}")
 
-addition(12,12,24,52)
+addition(12,12,24,52,a=10) 
